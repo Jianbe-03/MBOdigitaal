@@ -27,7 +27,7 @@
                     onclick="openTab(event, 'tab3')">Challenge 14</button>
                 <button
                     class="w-1/2 py-4 text-center font-medium text-gray-700 bg-gray-100 rounded-tr-lg focus:outline-none"
-                    onclick="openTab(event, 'tab4')">Challenge 15</button>
+                    onclick="openTab(event, 'tab4')">Challenge 15 test</button>
             </div>
             <div id="tab1" class="tabcontent p-4">
                 <?php require 'challenges-tab1.inc.php' ?>
