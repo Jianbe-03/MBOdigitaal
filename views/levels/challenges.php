@@ -7,6 +7,27 @@
 
 <body>
     <?php require '../views/templates/menu.php' ?>
+    <?php require 'challenge-viewer.php' ?>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.toggle-deliverables');
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const levelId = this.getAttribute('data-level-id');
+                const deliverablesList = document.getElementById('deliverables-' + levelId);
+            
+                // Toggle visibility
+                if (deliverablesList.classList.contains('hidden')) {
+                    deliverablesList.classList.remove('hidden');
+                } else {
+                    deliverablesList.classList.add('hidden');
+                }
+            });
+        });
+    });
+    </script>
 
     <div class="mt-6 mb-16 w-11/12 p-6 space-y-8 sm:p-8 bg-white mx-auto">
 
