@@ -24,15 +24,17 @@ foreach ($levels as $level) {
     
     // Display level information and create a button for each level
     echo "<div class='level'>
-            <h3 class='text-xl font-semibold text-gray-800'>level: {$level['level']}</h3>
+            <h3 class='text-xl font-semibold text-gray-800'>Level: {$level['level']}</h3>
             <p>{$level['description']}</p>
             <button class='toggle-deliverables' data-level-id='{$level['id']}'>View Deliverables</button>
             <ul id='deliverables-{$level['id']}' class='hidden'>";
     
     // Display deliverables for the level
     foreach ($deliverables as $deliverable) {
-        echo "<li>{$deliverable['DeliverableName']}</li>";
-        echo "<p>{$deliverable['DeliverableDesc']}</p>";
+        echo "<li>
+                <button class='toggle-description' data-deliverable-id='{$deliverable['id']}'>{$deliverable['DeliverableName']}</button>
+                <p id='description-{$deliverable['id']}' class='deliverable-description hidden'>{$deliverable['DeliverableDesc']}</p>
+              </li>";
     }
 
     echo "</ul></div>";

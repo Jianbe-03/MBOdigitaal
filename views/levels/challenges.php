@@ -11,19 +11,27 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const buttons = document.querySelectorAll('.toggle-deliverables');
-    
-        buttons.forEach(button => {
+        // Toggle deliverables for each level
+        const levelButtons = document.querySelectorAll('.toggle-deliverables');
+        levelButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const levelId = this.getAttribute('data-level-id');
                 const deliverablesList = document.getElementById('deliverables-' + levelId);
             
-                // Toggle visibility
-                if (deliverablesList.classList.contains('hidden')) {
-                    deliverablesList.classList.remove('hidden');
-                } else {
-                    deliverablesList.classList.add('hidden');
-                }
+                // Toggle visibility of deliverables list
+                deliverablesList.classList.toggle('hidden');
+            });
+        });
+
+        // Toggle description for each deliverable
+        const descriptionButtons = document.querySelectorAll('.toggle-description');
+        descriptionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const deliverableId = this.getAttribute('data-deliverable-id');
+                const description = document.getElementById('description-' + deliverableId);
+            
+                // Toggle visibility of deliverable description
+                description.classList.toggle('hidden');
             });
         });
     });
