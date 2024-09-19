@@ -29,4 +29,4 @@ require_once __DOCUMENTROOT__ . '/errors/default.php';
 // De HTML-pagina (view) wordt hier opgehaald.
 // $title is de titel van de html pagina.
 $title = "Challenges Levels";
-require __DOCUMENTROOT__ . '/views/levels/challenges.php';
+require __DOCUMENTROOT__ . '/views/levels/levels.php';
