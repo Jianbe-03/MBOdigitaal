@@ -5,7 +5,7 @@
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/views/templates/head.php' ?>
 </head>
 
-<body class="bg-stone-950">
+<body class="bg-zinc-900">
     <!-- Modal voor het resetten van wachtwoorden -->
     <div id="loginModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
         <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
@@ -43,7 +43,7 @@
 
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/views/admin/templates/topbar.php' ?>
 
-    <div class="mt-6 mx-auto px-4 bg-stone-950">
+    <div class="mt-6 mx-auto px-4 bg-zinc-900">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/views/admin/templates/menu.php' ?>
         <div class="p-6 text-medium text-stone-50 rounded w-full min-h-screen">
             <h3 class="text-lg font-bold text-stone-100 text-white mb-2">Gebruikers beheren</h3>
@@ -57,23 +57,23 @@
             <div class="flex space-x-4">
                 <form method="POST" action="<?php echo $newUrl ?>">
                     <button
-                        class=" mt-6 shadow bg-stone-700 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                        class=" mt-6 shadow bg-zinc-600 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                         type="submit">
                         Gebruiker toevoegen
                     </button>
                 </form>
                 <form method="POST" action="<?php echo $uploadFormUrl ?>">
                     <button
-                        class=" mt-6 shadow bg-stone-700 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                        class=" mt-6 shadow bg-zinc-600 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                         type="submit">
                         Eduarte upload
                     </button>
                 </form>
             </div>
             <br>
-            <table class="table-auto w-full bg-gray-800 text-white">
+            <table class="table-auto w-full bg-zinc-700 text-white">
                 <thead>
-                    <tr class="bg-stone-800">
+                    <tr class="bg-zinc-800">
                         <th class="px-4 py-2 text-left">Delete</th>
                         <th class="px-4 py-2 text-left">Reset</th>
                         <th class="px-4 py-2 text-left">Email</th>
@@ -86,7 +86,7 @@
                     <?php
                     foreach ($users as $user) {
                         ?>
-                        <tr class="even:bg-stone-900 odd:bg-stone-950">
+                        <tr class="even:bg-zinc-700 odd:bg-zinc-900">
                             <td class="px-4 py-2">
                                 <a href="<?php echo $deleteUrl ?>?id=<?php echo $user["id"]; ?>"
                                     onclick="return confirm('Weet je zeker dat je deze roll wil verwijderen?');">

@@ -5,7 +5,7 @@
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/views/templates/head.php' ?>
 </head>
 
-<body class="bg-stone-950">
+<body class="bg-zinc-900">
     <!-- Modal -->
     <div id="loginModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
         <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">

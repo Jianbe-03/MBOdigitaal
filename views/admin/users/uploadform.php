@@ -5,10 +5,10 @@
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/views/templates/head.php' ?>
 </head>
 
-<body class="bg-stone-950">
+<body class="bg-zinc-900">
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/views/admin/templates/topbar.php' ?>
 
-    <div class="mt-6 mx-auto px-4 bg-stone-950">
+    <div class="mt-6 mx-auto px-4 bg-zinc-900">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/views/admin/templates/menu.php' ?>
         <div class="p-6 text-medium text-stone-50 rounded w-full md:w-3/5 lg:w-2/5 min-h-screen">
             <h3 class="text-lg font-bold text-stone-100 text-white mb-2">CSV Upload vanuit Eduarte
@@ -113,12 +113,12 @@
                     <div class="md:w-1/3"></div>
                     <div class="md:w-2/3">
                         <button
-                            class="shadow bg-stone-700 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                            class="shadow bg-zinc-700 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                             type="submit">
                             Uploaden
                         </button>
                         <button
-                            class="shadow bg-stone-700 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                            class="shadow bg-zinc-700 hover:bg-stone-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                             type="reset" onclick="window.location='<?php echo "/admin/users/overview" ?>';return false;">
                             Annuleren
                         </button>
