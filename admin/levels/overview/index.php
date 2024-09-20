@@ -10,4 +10,5 @@ require_once __DOCUMENTROOT__ . '/models/Educations.php';
 
 $levels = Level::selectAll();
 
+$title = "Overzicht levels";
 require __DOCUMENTROOT__ . '/views/admin/levels/overview.php';
